@@ -6,6 +6,7 @@ const BASE_URL = `http://api.openweathermap.org/data/2.5/weather?appid=${API_KEY
 
 
 const weatherReport=async (req, res) => {
+  res.setHeader('Access-Control-Allow-Origin', '*')
   let city = req.params.city;
 
 
